@@ -5,19 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-<nav>
-    <div>Anna</div>
-    <div>
-        <ul>
-            <li>home</li>
-            <li>About Me</li>
-            <li>Contact Me</li>
-        </ul>
-    </div>
-</nav>
+    <nav class="navbar">
+        <div class="logo">Anna</div>
+        <div>
+          <ul class="nav-list">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About Me</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
+      <section class="hero">
+        <div class="left">
+          <h3 class="name">Hi, I'm Anna</h3>
+          <p>I am a Website Developer</p>
+        </div>
+        <div class="right">
+          <img src="./images/profile.jpg" alt ="Profile Picture" height="300px">
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2>My Skills</h2>
+        <div class="card">
+          <div class="skill">
+            <i class="fa-brands fa-html5 fa-3x"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-css3 fa-3x"></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-js fa-3x"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-bootstrap fa-3x"></i>
+            <p>Bootstrap</p>
+          </div>
+        </div>
+      </section> 
+
+      <section class="projects">
+        <h2>My Projects</h2>
+        <div class="card">
+          <div class="project">
+            <h3>Airbnb Clone</h3>
+            <img src="images/airbnb.webp" alt="Airbnb clone" />
+          </div>
+          <div class="project">
+            <h3>Netlix Clone</h3>
+            <img src="./images/netflix.jpg" alt="Netflix clone" />
+          </div>
+          <div class="project">
+            <h3>BBC Clone</h3>
+            <img src="images/bbc.png" alt="BBC clone" />
+          </div>
+          <div class="project">
+            <h3>Facebook Clone</h3>
+            <img src="./images/facebook.jpg" alt="Facebook clone" />
+        </div>
+        </div>
+      </section> 
+      <footer class="footer">
+        <p>Made with 💜 by Anna</p>
+      </footer>
     <script src="app.js"></script>
 </body>
 </html>

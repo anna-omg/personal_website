@@ -1,4 +1,178 @@
-nav{
-    display:flex;
-    justify-content: space-between;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: purple;
+  padding: 1rem;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.hero {
+  height: 80vh;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.left {
+  height: 60vh;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.right {
+  display:flex;
+  justify-content: center ;
+  align-items: center ;
+  height: 60vh;
+  margin: 1rem;
+  
+}
+
+.right img {
+border-radius : 10px
+
+}
+.name {
+  font-size: 3rem;
+  color: purple;
+}
+.skills,
+.projects {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.skills h2,
+.projects h2 {
+  font-size: 30px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.skill {
+  padding: 3rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+.skill i {
+  color: purple;
+}
+.projects {
+  background-color: whitesmoke;
+  margin-top: 3rem;
+}
+
+.project {
+  text-align: center;
+  margin: 10px;
+  padding: 1rem;
+}
+
+.project img {
+  height: 200px;
+  width: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.project h3 {
+  font-size: 25px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width:768px) {
+  .navbar {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  grid-template-columns: 1fr;
+}
+  
+}
+
+.contact{display:flex;
+justify-content: space-around;
+height: 40vh;
+}
+.telephone{
+  border: 2px solid purple;
+  border-radius:5px;
+  padding:5%;
+  width: 28%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.Gucci{
+  display:flex;
+  justify-content: space-around;
+}
+.fa-solid{
+  font-size: 4rem;
+}
+.Map-Location{
+  width:100vw ;
+  text-align:center ;
+  margin-block:100px;
+}
+footer:hover{
+  color:purple;
+  background-color:black;
+  }
